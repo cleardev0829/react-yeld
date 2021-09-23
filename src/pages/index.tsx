@@ -87,7 +87,7 @@ const Home: React.FC = () => {
 				<Testimonials />
 				<Pricing /> */}
 				<Client />
-				<Team />
+				{/* <Team /> */}
 				<Member />
 				<Particle />
 				<Contact />

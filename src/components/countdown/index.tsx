@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import BackgroundImage from "../../assets/img/background-tokensale.jpg";
 
@@ -56,7 +56,7 @@ const SmallText = styled.div`
     font-size: 16px;
 `
 
-export const CountDown: React.FC<any> = ({deadline}) => {
+export const CountDown: React.FC<any> = ({ deadline }) => {
     const [weeks, setWeeks] = useState(null);
     const [days, setDays] = useState(null);
     const [hours, setHours] = useState(null);
@@ -90,13 +90,13 @@ export const CountDown: React.FC<any> = ({deadline}) => {
         }, 1000);
         return () => clearTimeout(timer);
     });
-	return (
+    return (
         <Container>
             <div className="background-container"></div>
-            <img src={BackgroundImage} className="universeimg"  alt="" />
-            <div className="stars"></div>
-            <div className="twinkling"></div>
-            <div className="clouds"></div>
+            <div className="universeimg" style={{ backgroundImage: `url(${BackgroundImage})` }} ></div>
+            {/* <div className="stars"></div> */}
+            {/* <div className="twinkling"></div> */}
+            {/* <div className="clouds"></div> */}
             <Header>Coming Soon</Header>
             <CountDownMain>
                 <div>
@@ -122,5 +122,5 @@ export const CountDown: React.FC<any> = ({deadline}) => {
             </CountDownMain>
         </Container>
 
-	);
+    );
 };

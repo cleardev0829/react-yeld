@@ -93,8 +93,9 @@
   .universeimg{
     height: 100vh;
     width:100vw;
+    background-size: cover;
     position: absolute;
-    z-index: 3;
+    z-index: 0;
     right: 20px;
   }
   
