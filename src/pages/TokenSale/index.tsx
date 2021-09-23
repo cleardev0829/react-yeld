@@ -8,7 +8,7 @@ const TokenSale: React.FC = () => {
 	
 	return (
 		<main className="main-wrapper">
-			<CountDown deadline={deadline} />
+			<CountDown deadline={new Date(deadline["_i"])} />
 			<Particle />
 		</main>
 	);

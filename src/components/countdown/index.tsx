@@ -64,6 +64,7 @@ export const CountDown: React.FC<any> = ({ deadline }) => {
     const [seconds, setSeconds] = useState(null);
     const getTimeRemaining = (endtime) => {
         var t = endtime - Date.now();
+        console.log("[][][]", t);
         var seconds = Math.floor((t / 1000) % 60);
         var minutes = Math.floor((t / 1000 / 60) % 60);
         var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
