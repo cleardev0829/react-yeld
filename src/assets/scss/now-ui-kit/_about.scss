@@ -1,0 +1,62 @@
+.section-about {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem 1rem;
+    @include tablet-up {
+        padding: 5rem 1rem;
+    }
+}
+
+.about-header {
+    text-align: center;
+    color: #ebebeb;
+    font-weight: 800;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet-up {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    &__info {
+        width: 95vw;
+        @include tablet-up {
+            width: 65vw;
+        }
+    }
+    &__text {
+        color: #ebebeb;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 2rem;
+        @include tablet-up {
+            text-align: justify;
+            margin-top: 0;
+        }
+    }
+}
+
+.section-wp {
+    background-color: #000000b3;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.wp-dl {
+    z-index: 1000;
+    position: relative;
+    width: 15rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid #272727;
+    transition: all ease-in-out 350ms;
+    &:hover {
+        background-color: #3c3c3c;
+        border: 1px solid #6d6d6d
+    }
+}
